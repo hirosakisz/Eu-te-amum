@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro meu amorzinho ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== BODY ===== */
+body{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#ffe6f0,#fff5f9);
+    font-family:'Baloo 2', cursive;
+    overflow-x:hidden;
+}
+
+/* ===== SPARKLES ===== */
+.sparkles{
+    position:fixed;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    background-image:
+        radial-gradient(2px 2px at 20% 30%, white, transparent),
+        radial-gradient(2px 2px at 70% 60%, white, transparent),
+        radial-gradient(2px 2px at 40% 80%, white, transparent),
+        radial-gradient(2px 2px at 90% 20%, white, transparent);
+    animation: sparkleMove 6s linear infinite;
+    opacity:0.5;
+}
+
+@keyframes sparkleMove{
+    from{ transform:translateY(0px); }
+    to{ transform:translateY(-20px); }
+}
+
+/* ===== ENVELOPE ===== */
+.envelope{
+    width:200px;
+    height:140px;
+    background:#fff;
+    position:absolute;
+    cursor:pointer;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:0.5s;
+}
+
+.heart{
+    font-size:40px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.2);}
+    100%{transform:scale(1);}
+}
+
+/* ===== LETTER ===== */
+.letter{
+    position:absolute;
+    width:90%;
+    max-width:400px;
+    max-height:80vh;
+    overflow-y:auto;
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    transform:scale(0);
+    opacity:0;
+    transition:0.6s;
+    box-shadow:0 0 20px rgba(255, 105, 180, 0.4);
+    animation: glow 2.5s ease-in-out infinite alternate;
+}
+
+/* Scroll bonito */
+.letter::-webkit-scrollbar{
+    width:6px;
+}
+.letter::-webkit-scrollbar-thumb{
+    background:#ff9ec4;
+    border-radius:10px;
+}
+
+/* Glow da carta */
+@keyframes glow{
+    from{
+        box-shadow:0 0 15px rgba(255, 105, 180, 0.3),
+                   0 0 25px rgba(255, 182, 193, 0.2);
+    }
+    to{
+        box-shadow:0 0 25px rgba(255, 105, 180, 0.6),
+                   0 0 40px rgba(255, 182, 193, 0.4);
+    }
+}
+
+/* Foto */
+.letter img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-bottom:15px;
+    box-shadow:0 0 20px rgba(255,105,180,0.6);
+    animation: photoGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes photoGlow{
+    from{ box-shadow:0 0 15px rgba(255,105,180,0.4); }
+    to{ box-shadow:0 0 30px rgba(255,105,180,0.8); }
+}
+
+.letter h2{
+    color:#ff5c8a;
+    margin-bottom:10px;
+}
+
+.letter p{
+    color:#555;
+    font-size:18px;
+    line-height:1.5;
+    white-space:pre-line;
+}
+
+/* ===== ANIMAÇÕES ===== */
+.show{
+    transform:scale(1);
+    opacity:1;
+}
+
+.hide{
+    transform:scale(0);
+    opacity:0;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sparkles"></div>
+
+<div class="envelope" onclick="openLetter()">
+    <div class="heart">❤️</div>
+</div>
+
+<div class="letter" id="letter">
+    <img src="foto.jpg" alt="Minha Namorada">
+    <h2>Para o amor da minha vida</h2>
+    <p>
+Desde que você entrou na minha vida,
+tudo ganhou mais cor, mais sentido e mais sorriso.
+Não foi como uma virada de filme, nem algo exagerado.
+Foi acontecendo aos poucos, quase sem eu perceber.
+Um detalhe aqui, uma conversa ali,
+e quando eu vi, você já era parte de tudo.
+
+Antes de você, meus dias eram normais.
+Eu fazia o que precisava ser feito,
+ria quando dava,
+seguia em frente quando tinha que seguir.
+Mas faltava algo que eu nem sabia que faltava.
+
+Você trouxe presença.
+Trouxe significado para coisas simples.
+Trouxe vontade de dividir até os pensamentos mais aleatórios.
+E isso mudou completamente a forma como eu enxergo a rotina.
+
+Hoje eu acordo e penso em você.
+Durante o dia, lembro de algo e já imagino contando pra você.
+Quando algo dá certo, eu quero compartilhar.
+Quando algo dá errado, eu penso no que você diria.
+Você virou referência de conforto e de equilíbrio.
+
+Não é sobre depender.
+É sobre escolher.
+Eu escolho você todos os dias.
+Escolho incluir você nos meus planos.
+Escolho imaginar você no meu futuro.
+Escolho ficar, mesmo quando é mais fácil fugir.
+
+Você é meu lugar favorito no mundo.
+E quando eu falo isso, eu falo sério.
+Não é um exagero bonito,
+é uma verdade tranquila.
+Você é onde eu me sinto entendido.
+Onde eu posso falar sem medo de parecer estranho.
+Onde eu posso mostrar minhas inseguranças sem receio.
+
+Com você eu não preciso fingir segurança o tempo todo.
+Não preciso parecer forte o tempo inteiro.
+Eu posso ser real.
+Posso admitir que não sei tudo.
+Posso dizer que estou confuso.
+E você não transforma isso em fraqueza.
+
+Tem algo no seu jeito que me acalma.
+Algo na sua forma de enxergar as coisas que me faz refletir.
+Você me faz pensar antes de reagir.
+Me faz querer crescer.
+Me faz querer ser alguém melhor,
+não por obrigação,
+mas porque estar ao seu lado me inspira.
+
+Você não entrou na minha vida para ocupar espaço.
+Você entrou para transformar o que já existia.
+Para dar nova perspectiva ao que parecia comum.
+Para me lembrar que amor é construção diária.
+
+Eu admiro a sua força.
+Admiro a sua inteligência.
+Admiro o seu coração.
+Admiro até os seus medos,
+porque eles mostram o quanto você se importa.
+
+Quando eu penso na palavra “futuro”,
+não penso mais sozinho.
+Eu penso em nós.
+Penso em planos que ainda nem existem,
+mas que eu sei que quero construir com você.
+
+Você trouxe mais riso para os meus dias.
+Trouxe conversas que eu nunca teria com mais ninguém.
+Trouxe uma sensação de pertencimento que eu não sabia explicar antes.
+
+Se alguém me perguntasse o que mudou desde que você chegou,
+eu diria: mudou a forma como eu sinto as coisas.
+Eu sinto mais.
+Eu me importo mais.
+Eu valorizo mais.
+
+Você é meu lugar favorito no mundo
+porque é com você que eu me sinto em casa.
+Não importa o cenário,
+não importa o momento.
+Se você está ali, eu estou bem.
+
+E eu não estou falando de perfeição.
+A gente tem dias bons e dias difíceis.
+Tem discordâncias,
+tem inseguranças,
+tem momentos em que precisamos respirar fundo.
+Mas mesmo nesses dias,
+eu não penso em desistir.
+
+Porque o que a gente tem é real.
+É construído na conversa,
+no respeito,
+na parceria.
+
+Desde que você entrou na minha vida,
+eu aprendi que felicidade não é euforia constante.
+É constância.
+É saber que existe alguém que caminha com você.
+
+Você me ensinou que amor é cuidado diário.
+É atenção aos detalhes.
+É ouvir de verdade.
+É permanecer.
+
+Eu não sei explicar tudo o que você representa para mim,
+mas eu sei que minha vida é melhor com você nela.
+Mais colorida.
+Mais intensa.
+Mais cheia de significado.
+
+E se hoje eu sorrio com mais facilidade,
+se eu acredito mais em planos a longo prazo,
+se eu me sinto mais seguro para enfrentar o mundo,
+é porque você está aqui.
+
+Você não só entrou na minha vida.
+Você ficou.
+E fez dela um lugar onde eu realmente quero estar.
+ ❤️
+    </p>
+</div>
+
+<audio id="music" loop>
+    <source src="restless.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function openLetter(){
+    document.querySelector('.envelope').classList.add('hide');
+    document.getElementById('letter').classList.add('show');
+
+    let music = document.getElementById("music");
+    music.play().catch(()=>{});
+}
+</script>
+
+</body>
+</html>
